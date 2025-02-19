@@ -4,3 +4,54 @@
   box-sizing: border-box;
 }
 
+.oswald {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  /* font-weight: ; */
+  font-style: normal;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  padding: 0 1rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.navImageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navImage {
+  background-image: url("/images/Roger%20Rovento%20LETTERS%20(transparent).png");
+  
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sectionContainer {
+  background-color: black;
+  height: 70vh;
+}
+
+.footerContainer {
+  
+}
