@@ -46,9 +46,18 @@
   background-position: center;
 }
 
-.sectionContainer {
+.welcomeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  background-image: url("/images/Velvet\ Texture\ 1.png");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
   background-color: black;
-  height: 70vh;
+  height: 60vh;
 }
 
 .footerLinks {
