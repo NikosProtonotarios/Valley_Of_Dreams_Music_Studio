@@ -57,7 +57,58 @@
   background-repeat: none;
   background-position: center;
   background-color: black;
+  background-attachment: fixed;
   height: 60vh;
+}
+
+.studioPhoto1 {
+  background-image: url("/images/Studio\ 1.jpg");
+  height: 400px;
+  width: 600px;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.studioPhoto2 {
+  background-image: url("/images/Studio\ 2.jpg");
+  height: 400px;
+  width: 600px;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.studioPhoto3 {
+  background-image: url("/images/Studio\ 3.jpg");
+  height: 400px;
+  width: 600px;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.gearText {
+  display: flex;
+  font-size: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", serif;
+  height: 400px;
+  width: 600px;
+  gap: 50px;
+}
+
+.gear-category {
+  display: flex;
+  flex-direction: row;
+}
+
+.gear-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footerLinks {
