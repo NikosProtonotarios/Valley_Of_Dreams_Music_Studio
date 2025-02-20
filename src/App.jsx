@@ -20,8 +20,17 @@ function App() {
       <section className='sectionContainer'>
 
       </section>
-      <footer className='footerContainer'>
-        <p>2023 pRog.R Studio</p>
+      <footer className='footerContainer' style={{fontFamily: "Josefin Sans", fontSize: "20px", fontWeight: "700"}}>
+        <div>
+          <p style={{fontSize: '30px'}}>LETS CREATE MUSIC TOGETHER</p>
+        </div>
+        <div className='footerLinks'>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>2025 © pRog.R Studio - Valley of Dreams</p>
       </footer>
     </div>
   )
