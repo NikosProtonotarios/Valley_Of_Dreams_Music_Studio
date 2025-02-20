@@ -30,7 +30,7 @@ function App() {
       </section>
 
       <section class="gear-section">
-        <h2 style={{fontFamily: "oswald", fontSize: "50px", padding: "30px"}}>Studio Gear List</h2>
+        <h2 style={{fontFamily: "oswald", fontSize: "50px", padding: "30px", margin: "70px"}}>Studio Gear List</h2>
         <div class="gear-category">
           <div className="studioPhoto1"></div>
           <div className="gearText">
@@ -71,6 +71,12 @@ function App() {
             </ul>
           </div>
         </div>
+      </section>
+      
+      {/* <h2 style={{fontFamily: "oswald", fontSize: "50px", padding: "30px", textAlign: "center", margin: "70px"}}>VALLEY OF DREAMS MUSIC VERSE</h2> */}
+      <div className="musicVerseImage"></div>
+      <section className="musicVerseContainer">
+      
       </section>
 
       <footer

@@ -37,7 +37,6 @@
 
 .navImage {
   background-image: url("/images/Roger%20Rovento%20LETTERS%20(transparent).png");
-  
   height: 100px;
   width: 200px;
   background-color: white;
@@ -109,6 +108,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.musicVerseContainer {
+  background-image: url("/images/Valley\ 5.png");
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.musicVerseImage {
+  background-image: url("/images/Vod.png");
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .footerLinks {
