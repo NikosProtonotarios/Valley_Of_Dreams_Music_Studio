@@ -30,7 +30,16 @@ function App() {
       </section>
 
       <section class="gear-section">
-        <h2 style={{fontFamily: "oswald", fontSize: "50px", padding: "30px", margin: "70px"}}>Studio Gear List</h2>
+        <h2
+          style={{
+            fontFamily: "oswald",
+            fontSize: "50px",
+            padding: "30px",
+            margin: "70px",
+          }}
+        >
+          Studio Gear List
+        </h2>
         <div class="gear-category">
           <div className="studioPhoto1"></div>
           <div className="gearText">
@@ -58,7 +67,7 @@ function App() {
         </div>
 
         <div class="gear-category">
-        <div className="studioPhoto2"></div>
+          <div className="studioPhoto2"></div>
           <div className="gearText">
             <h3>Microphones & Headphones</h3>
             <ul>
@@ -72,12 +81,68 @@ function App() {
           </div>
         </div>
       </section>
-      
-      {/* <h2 style={{fontFamily: "oswald", fontSize: "50px", padding: "30px", textAlign: "center", margin: "70px"}}>VALLEY OF DREAMS MUSIC VERSE</h2> */}
-      <div className="musicVerseImage"></div>
-      <section className="musicVerseContainer">
-      
+
+      <section className="spotifyContainer">
+        <div className="spotifySongs">
+          <iframe
+            style={{ borderRadius: "12px" }}
+            src="https://open.spotify.com/embed/track/69nr4Kz592CgB7ridRjtDu?utm_source=generator"
+            width="25%"
+            height="352"
+            frameBorder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+
+          <iframe
+            style={{ borderRadius: "12px" }}
+            src="https://open.spotify.com/embed/track/0QOBy5QIynixPhjBzvQWLK?utm_source=generator"
+            width="25%"
+            height="352"
+            frameBorder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+
+          <iframe
+            style={{ borderRadius: "12px" }}
+            src="https://open.spotify.com/embed/track/5EA7EkWFFi5vMOFT8XaQm5?utm_source=generator"
+            width="25%"
+            height="352"
+            frameBorder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div className="spotifySongs">
+          <iframe
+            style={{ borderRadius: "12px" }}
+            src="https://open.spotify.com/embed/track/77LKzpVKqoe6kutMtdx6Q6?utm_source=generator"
+            width="25%"
+            height="352"
+            frameBorder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+          <iframe
+            style={{ borderRadius: "12px" }}
+            src="https://open.spotify.com/embed/track/1bcHeGjdiZYRmXBIAuAxS7?utm_source=generator"
+            width="25%"
+            height="352"
+            frameBorder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
       </section>
+
+      <div className="musicVerseImage"></div>
+      <section className="musicVerseContainer"></section>
 
       <footer
         className="footerContainer"

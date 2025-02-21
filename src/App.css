@@ -110,6 +110,21 @@
   align-items: center;
 }
 
+.spotifyContainer {
+  background-image: url('/images/D2BFE6MBNJO6HMTMZX5FDTTJOM.avif');
+  background-attachment: fixed;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.spotifySongs {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
 .musicVerseContainer {
   background-image: url("/images/Valley\ 5.png");
   height: 800px;
@@ -117,6 +132,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .musicVerseImage {
