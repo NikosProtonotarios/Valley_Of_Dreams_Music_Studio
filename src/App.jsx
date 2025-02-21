@@ -156,9 +156,15 @@ function App() {
           <p style={{ fontSize: "30px" }}>LETS CREATE MUSIC TOGETHER</p>
         </div>
         <div className="footerLinks">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.facebook.com/pRog.RoventoStudio">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/rogerrovento?fbclid=IwZXh0bgNhZW0CMTAAAR2d8lH7GoKtKg8kMYF2KAdsCSTi4ElPi_CgiVNzNEU5C-bbKTAxLMmKv48_aem_QBI_ejCe6QfcgY25_qTJKw">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@RogerRovento">
           <i class="fa-brands fa-youtube"></i>
+          </a>
           <i class="fa-brands fa-linkedin"></i>
         </div>
         <p>2025 © pRog.R Studio - Valley of Dreams</p>
