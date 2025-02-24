@@ -141,6 +141,51 @@ function App() {
         </div>
       </section>
 
+      <section className="bioContainer">
+        <div className="bioText">
+          <h1
+            style={{
+              fontFamily: "oswald",
+              textAlign: "center",
+              fontSize: "70px",
+            }}
+          >
+            ABOUT ROGER
+          </h1>
+          <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+            Hailing from Greece, <strong>Roger Rovento</strong> is a talented
+            musician with over a decade of experience as a{" "}
+            <strong>music teacher</strong>, <strong>composer</strong>, and{" "}
+            <strong>producer</strong>. His deep passion for music shines through
+            in every note, whether he’s playing, teaching, or creating.
+          </p>
+            <br />
+          <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+            Having mastered a wide range of skills, Roger brings a{" "}
+            <strong>unique and diverse approach</strong> to his craft,
+            constantly exploring new sounds and techniques. With more than{" "}
+            <strong>10 years of teaching experience</strong>, Roger has helped
+            shape the musical journeys of countless students, guiding them with
+            his patient and engaging approach.
+          </p>
+            <br />
+          <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+            His <strong>collaborative spirit</strong> has also led him to work
+            with musicians from various backgrounds, contributing his talents to
+            numerous creative projects. As a composer and producer, Roger’s
+            ability to <strong>blend genres and styles</strong> makes his music
+            stand out, earning him respect in the industry.
+          </p>
+            <br />
+          <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+            Whether in the classroom, the studio, or on stage, Roger Rovento
+            continues to <strong>push the boundaries</strong> of what’s possible
+            in music, inspiring both his students and peers alike.
+          </p>
+        </div>
+        <div className="bioPhoto"></div>
+      </section>
+
       <div className="musicVerseImage"></div>
       <section className="musicVerseContainer"></section>
 
@@ -163,7 +208,7 @@ function App() {
             <i class="fa-brands fa-instagram"></i>
           </a>
           <a href="https://www.youtube.com/@RogerRovento">
-          <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-youtube"></i>
           </a>
           <i class="fa-brands fa-linkedin"></i>
         </div>

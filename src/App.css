@@ -125,6 +125,29 @@
   padding: 30px;
 }
 
+.bioContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bioContainer h1 {
+  margin: 50px;
+}
+
+.bioText {
+  width: 600px;
+  margin: 90px;
+}
+
+.bioPhoto {
+  background-image: url("/images/RR\ 1.jpg");
+  height: 1100px;
+  width: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .musicVerseContainer {
   background-image: url("/images/Valley\ 5.png");
   height: 800px;
