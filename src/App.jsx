@@ -159,7 +159,7 @@ function App() {
             <strong>producer</strong>. His deep passion for music shines through
             in every note, whether he’s playing, teaching, or creating.
           </p>
-            <br />
+          <br />
           <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
             Having mastered a wide range of skills, Roger brings a{" "}
             <strong>unique and diverse approach</strong> to his craft,
@@ -168,7 +168,7 @@ function App() {
             shape the musical journeys of countless students, guiding them with
             his patient and engaging approach.
           </p>
-            <br />
+          <br />
           <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
             His <strong>collaborative spirit</strong> has also led him to work
             with musicians from various backgrounds, contributing his talents to
@@ -176,7 +176,7 @@ function App() {
             ability to <strong>blend genres and styles</strong> makes his music
             stand out, earning him respect in the industry.
           </p>
-            <br />
+          <br />
           <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
             Whether in the classroom, the studio, or on stage, Roger Rovento
             continues to <strong>push the boundaries</strong> of what’s possible
@@ -184,6 +184,71 @@ function App() {
           </p>
         </div>
         <div className="bioPhoto"></div>
+      </section>
+
+      <section>
+        <div style={{ margin: "80px" }}>
+          <h1
+            style={{
+              fontFamily: "oswald",
+              fontSize: "70px",
+              textAlign: "center",
+            }}
+          >
+            FEATURED WORKS
+          </h1>
+          <p
+            style={{
+              fontFamily: "oswald",
+              fontSize: "30px",
+              textAlign: "center",
+            }}
+          >
+            PRODUCED | ENGINEERED | MIXED | MASTERED
+          </p>
+        </div>
+        <div style={{padding: "30px", backgroundColor: "#333333", }}>
+        <iframe
+          width="25%"
+          height="315"
+          src="https://www.youtube.com/embed/LEK51tqAFTE?si=x8BU1TZgkKJFVLuG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="25%"
+          height="315"
+          src="https://www.youtube.com/embed/yg4VZ-p_rUY?si=MA8eHZkjjIo47uLA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="25%"
+          height="315"
+          src="https://www.youtube.com/embed/YZb0KN8d9gU?si=Ke6hQlRbaeAy7QYT"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="25%"
+          height="315"
+          src="https://www.youtube.com/embed/0QKlhfCWH_I?si=kGYGtDBvmW1gukj3"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        </div>
       </section>
 
       <div className="musicVerseImage"></div>
