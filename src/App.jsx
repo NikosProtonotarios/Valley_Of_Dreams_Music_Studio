@@ -2,6 +2,20 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
     <div>
       <nav className="navBar">
@@ -207,47 +221,47 @@ function App() {
             PRODUCED | ENGINEERED | MIXED | MASTERED
           </p>
         </div>
-        <div style={{padding: "30px", backgroundColor: "#333333", }}>
-        <iframe
-          width="25%"
-          height="315"
-          src="https://www.youtube.com/embed/LEK51tqAFTE?si=x8BU1TZgkKJFVLuG"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          width="25%"
-          height="315"
-          src="https://www.youtube.com/embed/yg4VZ-p_rUY?si=MA8eHZkjjIo47uLA"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          width="25%"
-          height="315"
-          src="https://www.youtube.com/embed/YZb0KN8d9gU?si=Ke6hQlRbaeAy7QYT"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          width="25%"
-          height="315"
-          src="https://www.youtube.com/embed/0QKlhfCWH_I?si=kGYGtDBvmW1gukj3"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div style={{ padding: "30px", backgroundColor: "#333333" }}>
+          <iframe
+            width="25%"
+            height="315"
+            src="https://www.youtube.com/embed/LEK51tqAFTE?si=x8BU1TZgkKJFVLuG"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="25%"
+            height="315"
+            src="https://www.youtube.com/embed/yg4VZ-p_rUY?si=MA8eHZkjjIo47uLA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="25%"
+            height="315"
+            src="https://www.youtube.com/embed/YZb0KN8d9gU?si=Ke6hQlRbaeAy7QYT"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="25%"
+            height="315"
+            src="https://www.youtube.com/embed/0QKlhfCWH_I?si=kGYGtDBvmW1gukj3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </section>
 
@@ -256,19 +270,39 @@ function App() {
 
       <section className="emailContainer">
         <div className="contactForm">
-            <h2>Contact me</h2>
-            <form>
-              <div>
-                <label>Name</label>
-                <input
-                  // type="text"
-                  // name="name"
-                  // value={FormData.name}
-                  // onChange={handleChange}
-                  // required
-                />
-              </div>
-            </form>
+          <h2>Contact me</h2>
+          <form>
+            <div>
+              <label>Name: </label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <label>Email: </label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <label>Message</label>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
       </section>
 
