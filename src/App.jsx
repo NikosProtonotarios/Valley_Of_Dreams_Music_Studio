@@ -33,7 +33,7 @@ function App() {
         <h2
           style={{
             fontFamily: "oswald",
-            fontSize: "50px",
+            fontSize: "70px",
             padding: "30px",
             margin: "70px",
           }}
@@ -253,6 +253,24 @@ function App() {
 
       <div className="musicVerseImage"></div>
       <section className="musicVerseContainer"></section>
+
+      <section className="emailContainer">
+        <div className="contactForm">
+            <h2>Contact me</h2>
+            <form>
+              <div>
+                <label>Name</label>
+                <input
+                  // type="text"
+                  // name="name"
+                  // value={FormData.name}
+                  // onChange={handleChange}
+                  // required
+                />
+              </div>
+            </form>
+        </div>
+      </section>
 
       <footer
         className="footerContainer"
