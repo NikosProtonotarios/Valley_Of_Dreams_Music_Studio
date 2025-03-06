@@ -166,36 +166,39 @@ function App() {
           >
             ABOUT ROGER
           </h1>
-          <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
-            Hailing from Greece, <strong>Roger Rovento</strong> is a talented
-            musician with over a decade of experience as a{" "}
-            <strong>music teacher</strong>, <strong>composer</strong>, and{" "}
-            <strong>producer</strong>. His deep passion for music shines through
-            in every note, whether he’s playing, teaching, or creating.
-          </p>
-          <br />
-          <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
-            Having mastered a wide range of skills, Roger brings a{" "}
-            <strong>unique and diverse approach</strong> to his craft,
-            constantly exploring new sounds and techniques. With more than{" "}
-            <strong>10 years of teaching experience</strong>, Roger has helped
-            shape the musical journeys of countless students, guiding them with
-            his patient and engaging approach.
-          </p>
-          <br />
-          <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
-            His <strong>collaborative spirit</strong> has also led him to work
-            with musicians from various backgrounds, contributing his talents to
-            numerous creative projects. As a composer and producer, Roger’s
-            ability to <strong>blend genres and styles</strong> makes his music
-            stand out, earning him respect in the industry.
-          </p>
-          <br />
-          <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
-            Whether in the classroom, the studio, or on stage, Roger Rovento
-            continues to <strong>push the boundaries</strong> of what’s possible
-            in music, inspiring both his students and peers alike.
-          </p>
+          <div className="rogerText">
+            <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+              Hailing from Greece, <strong>Roger Rovento</strong> is a talented
+              musician with over a decade of experience as a{" "}
+              <strong>music teacher</strong>, <strong>composer</strong>, and{" "}
+              <strong>producer</strong>. His deep passion for music shines
+              through in every note, whether he’s playing, teaching, or
+              creating.
+            </p>
+            <br />
+            <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+              Having mastered a wide range of skills, Roger brings a{" "}
+              <strong>unique and diverse approach</strong> to his craft,
+              constantly exploring new sounds and techniques. With more than{" "}
+              <strong>10 years of teaching experience</strong>, Roger has helped
+              shape the musical journeys of countless students, guiding them
+              with his patient and engaging approach.
+            </p>
+            <br />
+            <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+              His <strong>collaborative spirit</strong> has also led him to work
+              with musicians from various backgrounds, contributing his talents
+              to numerous creative projects. As a composer and producer, Roger’s
+              ability to <strong>blend genres and styles</strong> makes his
+              music stand out, earning him respect in the industry.
+            </p>
+            <br />
+            <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+              Whether in the classroom, the studio, or on stage, Roger Rovento
+              continues to <strong>push the boundaries</strong> of what’s
+              possible in music, inspiring both his students and peers alike.
+            </p>
+          </div>
         </div>
         <div className="bioPhoto"></div>
       </section>
@@ -270,7 +273,7 @@ function App() {
 
       <section className="emailContainer">
         <div className="contactForm">
-          <h2>Contact me</h2>
+          <h2 style={{ fontSize: "60px", textAlign: "center" }}>Contact me</h2>
           <form>
             <div>
               <label>Name: </label>
@@ -293,7 +296,7 @@ function App() {
               />
             </div>
             <div>
-              <label>Message</label>
+              <label>Message:</label>
               <textarea
                 name="message"
                 value={formData.message}
@@ -301,7 +304,18 @@ function App() {
                 required
               />
             </div>
-            <button type="submit">Send Message</button>
+            <button
+              type="submit"
+              style={{
+                display: "block",
+                margin: "20px auto",
+                padding: "10px 20px",
+                fontSize: "16px",
+                fontFamily: "oswald",
+              }}
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </section>
