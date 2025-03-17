@@ -28,28 +28,28 @@ function App() {
           style={{ fontFamily: "oswald", fontSize: "23px" }}
         > 
           <Link to="welcome-container" smooth={true} duration={600}>
-          <p>Home</p>
+          <p className="homePointer">Home</p>
           </Link>
 
           <Link
             to="gearSection" smooth={true} duration={600}>
-          <p>Studio Gear List</p>
+          <p className="studioPointer">Studio Gear List</p>
           </Link>
 
           <Link to="youtube-container" smooth={true} duration={600}>
-            <p>Featured Works</p>
+            <p className="featuredPointer">Featured Works</p>
           </Link>
 
           <Link to="musicVerse-container" smooth={true} duration={600}>
-            <p>Valley of Dreams</p>
+            <p className="valleyPointer">Valley of Dreams</p>
           </Link>
 
           <Link to="bio-container" smooth={true} duration={600}>
-            <p>About</p>
+            <p className="aboutPointer">About</p>
           </Link>
 
           <Link to="email-container" smooth={true} duration={600}>
-            <p>Contact</p>
+            <p className="contactPointer">Contact</p>
           </Link>
         </div>
       </nav>
