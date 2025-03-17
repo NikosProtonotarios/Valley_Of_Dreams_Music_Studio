@@ -136,6 +136,18 @@
   align-items: center;
 }
 
+.gear-section h3 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.gear-section li {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: fadeIn 0.7s ease-in forwards;
+  animation-delay: 0.3s;
+}
+
 .spotifyContainer {
   background-image: url('/images/D2BFE6MBNJO6HMTMZX5FDTTJOM.avif');
   background-attachment: fixed;

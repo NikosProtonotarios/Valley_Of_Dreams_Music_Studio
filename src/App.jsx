@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import "./App.css";
 
 function App() {
@@ -25,16 +26,35 @@ function App() {
         <div
           className="navLinks"
           style={{ fontFamily: "oswald", fontSize: "23px" }}
-        >
-          <p>pRog.R Studio</p>
-          <p>VoD MusicVerse</p>
-          <p>VoD Records</p>
-          <p>Contact</p>
-          <p>About</p>
+        > 
+          <Link to="welcome-container" smooth={true} duration={600}>
+          <p>Home</p>
+          </Link>
+
+          <Link
+            to="gearSection" smooth={true} duration={600}>
+          <p>Studio Gear List</p>
+          </Link>
+
+          <Link to="youtube-container" smooth={true} duration={600}>
+            <p>Featured Works</p>
+          </Link>
+
+          <Link to="musicVerse-container" smooth={true} duration={600}>
+            <p>Valley of Dreams</p>
+          </Link>
+
+          <Link to="bio-container" smooth={true} duration={600}>
+            <p>About</p>
+          </Link>
+
+          <Link to="email-container" smooth={true} duration={600}>
+            <p>Contact</p>
+          </Link>
         </div>
       </nav>
 
-      <section className="welcomeContainer">
+      <section id="welcome-container" className="welcomeContainer">
         <p style={{ fontFamily: "oswald", fontSize: "30px", color: "white" }}>
           Welcome to pRog.R Studio
         </p>
@@ -43,7 +63,7 @@ function App() {
         </p>
       </section>
 
-      <section class="gear-section">
+      <section id="gearSection" class="gear-section">
         <h2
           style={{
             fontFamily: "oswald",
@@ -96,7 +116,7 @@ function App() {
         </div>
       </section>
 
-      <section className="spotifyContainer">
+      <section id="spotify-container" className="spotifyContainer">
         <div className="spotifySongs">
           <iframe
             style={{ borderRadius: "12px" }}
@@ -155,7 +175,7 @@ function App() {
         </div>
       </section>
 
-      <section className="bioContainer">
+      <section id="bio-container" className="bioContainer">
         <div className="bioText">
           <h1
             style={{
@@ -203,7 +223,7 @@ function App() {
         <div className="bioPhoto"></div>
       </section>
 
-      <section>
+      <section id="youtube-container">
         <div style={{ margin: "80px" }}>
           <h1
             style={{
@@ -269,11 +289,14 @@ function App() {
       </section>
 
       <div className="musicVerseImage"></div>
-      <section className="musicVerseContainer"></section>
+      <section
+        id="musicVerse-container"
+        className="musicVerseContainer"
+      ></section>
 
-      <section className="emailContainer">
+      <section id="email-container" className="emailContainer">
         <div className="contactForm">
-          <h2 style={{ fontSize: "60px", textAlign: "center" }}>Contact me</h2>
+          <h2 style={{ fontSize: "60px", textAlign: "center" }}>CONTACT ME</h2>
           <form>
             <div>
               <label>Name: </label>
