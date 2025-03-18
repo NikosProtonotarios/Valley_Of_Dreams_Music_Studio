@@ -17,32 +17,28 @@ function App() {
     threshold: 0.5,
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  const form = useRef(); // Reference to the form
 
-  const handleSubmit = (e) => {
+  // Handle form submission with emailjs
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    // EmailJS sends the form data to the owner
     emailjs
       .sendForm(
         "service_lvyi88x", // Replace with your EmailJS service ID
-        "template_lijko12r", // Replace with your EmailJS template ID
-        e.target,           // The form is passed as the target
-        "548wYUkSclgdexJeq"      // Replace with your EmailJS user ID
+        "template_ljko12r", // Replace with your EmailJS template ID
+        form.current,
+        "548wYUkSclgdexJeq" // Replace with your EmailJS user ID
       )
       .then(
-        (result) => {
-          alert("Message sent successfully!"); // Success alert
-          setFormData({ name: "", email: "", message: "" }); // Clear form after sending
+        () => {
+          console.log("SUCCESS!");
+          alert("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" }); // Reset form after successful submission
         },
         (error) => {
-          alert("Message sending failed, please try again."); // Error alert
+          console.log("FAILED...", error.text);
+          alert("Failed to send message, please try again.");
         }
       );
   };
@@ -326,52 +322,46 @@ function App() {
       ></section>
 
       <section id="email-container" className="emailContainer">
-        <div className="contactForm">
-          <h2 style={{ fontSize: "60px", textAlign: "center" }}>CONTACT ME</h2>
-          <form onSubmit={handleSubmit}>
-            <div>
-              <label>Name: </label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div>
-              <label>Email: </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div>
-              <label>Message:</label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              style={{
-                display: "block",
-                margin: "20px auto",
-                padding: "10px 20px",
-                fontSize: "16px",
-                fontFamily: "oswald",
-              }}
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
+      <div className="contactForm">
+        <h2 style={{ fontSize: "60px", textAlign: "center" }}>CONTACT ME</h2>
+        <form ref={form} onSubmit={sendEmail}>
+          <div>
+            <label>Name: </label>
+            <input
+              type="text"
+              name="name"
+              required
+            />
+          </div>
+          <div>
+            <label>Email: </label>
+            <input
+              type="email"
+              name="email"
+              required
+            />
+          </div>
+          <div>
+            <label>Message:</label>
+            <textarea
+              name="message"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            style={{
+              display: "block",
+              margin: "20px auto",
+              padding: "10px 20px",
+              fontSize: "16px",
+              fontFamily: "oswald",
+            }}
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
       </section>
 
       <footer
