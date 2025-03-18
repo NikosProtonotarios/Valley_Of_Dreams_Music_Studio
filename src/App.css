@@ -301,18 +301,16 @@
   padding-bottom: 5px;
 }
 
-/* Hover effect */
 .homePointer:hover,
 .studioPointer:hover,
 .featuredPointer:hover,
 .valleyPointer:hover,
 .aboutPointer:hover,
 .contactPointer:hover {
-  color: #230074; /* Change text color on hover */
-  transform: scale(1.1); /* Slightly scale up */
+  color: #230074;
+  transform: scale(1.1);
 }
 
-/* Underline effect on hover */
 .homePointer::after,
 .studioPointer::after,
 .featuredPointer::after,
@@ -336,4 +334,45 @@
 .aboutPointer:hover::after,
 .contactPointer:hover::after {
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .bodyContainer {
+    width: 1200px;
+  }
+
+  .welcomeContainer {
+    width: 1200px;
+  }
+
+  .gear-section,
+  #youtube-container,
+  .musicVerseContainer,
+  .emailContainer,
+  .footerContainer {
+    width: 1200px;
+  }
+
+  .studioPhoto1,
+  .studioPhoto2 {
+    clip-path: inset(0 0 0 100px);
+  }
+
+  .studioPhoto3 {
+    clip-path: inset(0 100px 0 0);
+  }
+
+  .spotifyContainer {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1430px) {
+  .navBar {
+    gap: 100px;
+  }
+
+  .navImage {
+    width: 150px;
+  }
 }

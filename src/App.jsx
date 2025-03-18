@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
+import { useInView } from "react-intersection-observer";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./App.css";
 
 function App() {
@@ -7,6 +10,11 @@ function App() {
     name: "",
     email: "",
     message: "",
+  });
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
   });
 
   const handleChange = (e) => {
@@ -17,8 +25,30 @@ function App() {
     }));
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // EmailJS sends the form data to the owner
+    emailjs
+      .sendForm(
+        "service_lvyi88x", // Replace with your EmailJS service ID
+        "template_lijko12r", // Replace with your EmailJS template ID
+        e.target,           // The form is passed as the target
+        "548wYUkSclgdexJeq"      // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!"); // Success alert
+          setFormData({ name: "", email: "", message: "" }); // Clear form after sending
+        },
+        (error) => {
+          alert("Message sending failed, please try again."); // Error alert
+        }
+      );
+  };
+
   return (
-    <div>
+    <div className="bodyContainer">
       <nav className="navBar">
         <div className="navImageContainer">
           <div className="navImage"></div>
@@ -175,7 +205,8 @@ function App() {
         </div>
       </section>
 
-      <section id="bio-container" className="bioContainer">
+      <section id="bio-container"
+       className="bioContainer">
         <div className="bioText">
           <h1
             style={{
@@ -297,7 +328,7 @@ function App() {
       <section id="email-container" className="emailContainer">
         <div className="contactForm">
           <h2 style={{ fontSize: "60px", textAlign: "center" }}>CONTACT ME</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div>
               <label>Name: </label>
               <input
