@@ -262,6 +262,12 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.2s ease;
+}
+
+.contactForm button:active {
+  transform: scale(1.2);
+  background-color: #3e8e41;
 }
 
 .footerLinks {
@@ -297,9 +303,11 @@
   cursor: pointer;
   position: relative;
   display: inline-block;
-  transition: color 0.3s ease, transform 0.3s ease;
   padding-bottom: 5px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Combine transitions */
+  transform-origin: center; /* Ensures scaling happens from the center */
 }
+
 
 .homePointer:hover,
 .studioPointer:hover,
