@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .oswald {
   font-family: "Oswald", serif;
   font-optical-sizing: auto;
@@ -35,6 +39,7 @@
   display: flex;
   align-items: center;
   gap: 70px;
+  font-size: 23px;
 }
 
 .navImageContainer {
@@ -58,6 +63,7 @@
   align-items: center;
   justify-content: center;
   gap: 100px;
+  font-size: 50px;
   background-image: url("/images/Velvet\ Texture\ 1.png");
   background-size: cover;
   background-repeat: none;
@@ -68,6 +74,7 @@
 }
 
 .welcomeContainer p:first-child {
+  font-size: 30px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.5s ease-in forwards;
@@ -304,8 +311,8 @@
   position: relative;
   display: inline-block;
   padding-bottom: 5px;
-  transition: color 0.3s ease, transform 0.3s ease; /* Combine transitions */
-  transform-origin: center; /* Ensures scaling happens from the center */
+  transition: color 0.3s ease, transform 0.3s ease;
+  transform-origin: center;
 }
 
 
@@ -344,43 +351,69 @@
   width: 100%;
 }
 
-@media (max-width: 1200px) {
-  .bodyContainer {
-    width: 1200px;
-  }
-
-  .welcomeContainer {
-    width: 1200px;
-  }
-
-  .gear-section,
-  #youtube-container,
-  .musicVerseContainer,
-  .emailContainer,
-  .footerContainer {
-    width: 1200px;
-  }
-
-  .studioPhoto1,
-  .studioPhoto2 {
-    clip-path: inset(0 0 0 100px);
-  }
-
-  .studioPhoto3 {
-    clip-path: inset(0 100px 0 0);
-  }
-
-  .spotifyContainer {
-    width: 1200px;
-  }
-}
-
 @media (max-width: 1430px) {
   .navBar {
     gap: 100px;
   }
 
+  .navLinks {
+    font-size: 23px;
+  }
+
   .navImage {
     width: 150px;
   }
+}
+
+@media (max-width: 998px) {
+  .navLinks {
+    font-size: 13px;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 693px) {
+  .welcomeContainer p:nth-of-type(2) {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 666px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .bodyContainer {
+    max-width: 576px;
+  }
+
+  .welcomeContainer p:nth-of-type(2) {
+    font-size: 30px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .menu-icon {
+    /* display: block;
+    font-size: 50px; */
+  }
+
+  .navBar {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 413px) {
+  .welcomeContainer p:nth-of-type(2) {
+    font-size: 20px;
+  }
+
+  .welcomeContainer p:first-of-type {
+    font-size: 20px;
+  }
+  
 }

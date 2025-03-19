@@ -12,14 +12,19 @@ function App() {
     message: "",
   });
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
   });
 
-  const form = useRef(); // Reference to the form
+  const form = useRef();
 
-  // Handle form submission with emailjs
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -34,7 +39,7 @@ function App() {
         () => {
           console.log("SUCCESS!");
           alert("Message sent successfully!");
-          setFormData({ name: "", email: "", message: "" }); // Reset form after successful submission
+          setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -49,9 +54,14 @@ function App() {
         <div className="navImageContainer">
           <div className="navImage"></div>
         </div>
+
+        <div className="menu-icon" onClick={toggleMenu}>
+          <i className="fa-solid fa-bars"></i>
+        </div>
+
         <div
           className="navLinks"
-          style={{ fontFamily: "oswald", fontSize: "23px" }}
+          style={{ fontFamily: "oswald" }}
         > 
           <Link to="welcome-container" smooth={true} duration={600}>
           <p className="homePointer">Home</p>
@@ -81,10 +91,10 @@ function App() {
       </nav>
 
       <section id="welcome-container" className="welcomeContainer">
-        <p style={{ fontFamily: "oswald", fontSize: "30px", color: "white" }}>
+        <p style={{ fontFamily: "oswald", color: "white" }}>
           Welcome to pRog.R Studio
         </p>
-        <p style={{ fontFamily: "oswald", color: "white", fontSize: "50px" }}>
+        <p style={{ fontFamily: "oswald", color: "white" }}>
           WHERE YOUR SOUND COMES ALIVE
         </p>
       </section>
