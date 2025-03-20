@@ -103,7 +103,6 @@ function App() {
         <h2
           style={{
             fontFamily: "oswald",
-            fontSize: "70px",
             padding: "30px",
             margin: "70px",
           }}
@@ -218,13 +217,12 @@ function App() {
             style={{
               fontFamily: "oswald",
               textAlign: "center",
-              fontSize: "70px",
             }}
           >
             ABOUT ROGER
           </h1>
           <div className="rogerText">
-            <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+            <p style={{ fontFamily: "oswald" }}>
               Hailing from Greece, <strong>Roger Rovento</strong> is a talented
               musician with over a decade of experience as a{" "}
               <strong>music teacher</strong>, <strong>composer</strong>, and{" "}

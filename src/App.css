@@ -141,6 +141,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 50px;
 }
 
 .gear-section h3 {
@@ -181,15 +182,17 @@
 
 .bioText {
   width: 600px;
-  margin: 90px;
+  margin: 50px;
 }
 
 .bioText h1:first-child {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
+  font-size: 40px;
 }
 
 .rogerText {
+  font-size: 20px;
   opacity: 0;
   transform: translateX(40px);
   animation: fadeIn 0.7s ease-in forwards;
@@ -370,6 +373,39 @@
     font-size: 13px;
     gap: 35px;
   }
+
+  .studioPhoto1 {
+    clip-path: inset(0 0 0 10px);
+  }
+
+  .studioPhoto3 {
+    clip-path: inset(0 10px 0 0);
+  }
+
+  .studioPhoto2 {
+    clip-path: inset(0 0 0 10px);
+  }
+
+  .gearText {
+    font-size: 17px;
+    width: 600px;
+  }
+
+  .gear-category {
+    width: 650px;
+  }
+
+  .gear-section {
+    font-size: 44px;
+  }
+
+  .bioText {
+    margin: 20px;
+  }
+
+  /* .bioText h1 {
+    margin: 15px;
+  } */
 }
 
 @media (max-width: 693px) {
