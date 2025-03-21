@@ -209,6 +209,9 @@
 }
 
 .musicVerseContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-image: url("/images/Valley\ 5.png");
   height: 800px;
   width: 100%;

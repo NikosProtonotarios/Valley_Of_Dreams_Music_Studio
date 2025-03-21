@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./App.css";
 
 function App() {
@@ -59,17 +59,13 @@ function App() {
           <i className="fa-solid fa-bars"></i>
         </div>
 
-        <div
-          className="navLinks"
-          style={{ fontFamily: "oswald" }}
-        > 
+        <div className="navLinks" style={{ fontFamily: "oswald" }}>
           <Link to="welcome-container" smooth={true} duration={600}>
-          <p className="homePointer">Home</p>
+            <p className="homePointer">Home</p>
           </Link>
 
-          <Link
-            to="gearSection" smooth={true} duration={600}>
-          <p className="studioPointer">Studio Gear List</p>
+          <Link to="gearSection" smooth={true} duration={600}>
+            <p className="studioPointer">Studio Gear List</p>
           </Link>
 
           <Link to="youtube-container" smooth={true} duration={600}>
@@ -210,8 +206,7 @@ function App() {
         </div>
       </section>
 
-      <section id="bio-container"
-       className="bioContainer">
+      <section id="bio-container" className="bioContainer">
         <div className="bioText">
           <h1
             style={{
@@ -323,53 +318,62 @@ function App() {
         </div>
       </section>
 
-      <div className="musicVerseImage"></div>
-      <section
-        id="musicVerse-container"
-        className="musicVerseContainer"
-      ></section>
+      {/* <div className="musicVerseImage"></div> */}
+      <section id="musicVerse-container" className="musicVerseContainer">
+        <div>
+          <iframe
+            style={{ borderRadius: "12px" }}
+            src="https://open.spotify.com/embed/track/0Gh9v1x85KdhI0cJ4SUpGN?utm_source=generator"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            style={{ borderRadius: "12px" }}
+            src="https://open.spotify.com/embed/track/3TBP3U27Mqc4o9GwXhrshb?utm_source=generator"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
 
       <section id="email-container" className="emailContainer">
-      <div className="contactForm">
-        <h2 style={{ fontSize: "60px", textAlign: "center" }}>CONTACT ME</h2>
-        <form ref={form} onSubmit={sendEmail}>
-          <div>
-            <label>Name: </label>
-            <input
-              type="text"
-              name="name"
-              required
-            />
-          </div>
-          <div>
-            <label>Email: </label>
-            <input
-              type="email"
-              name="email"
-              required
-            />
-          </div>
-          <div>
-            <label>Message:</label>
-            <textarea
-              name="message"
-              required
-            />
-          </div>
-          <button
-            type="submit"
-            style={{
-              display: "block",
-              margin: "20px auto",
-              padding: "10px 20px",
-              fontSize: "16px",
-              fontFamily: "oswald",
-            }}
-          >
-            Send Message
-          </button>
-        </form>
-      </div>
+        <div className="contactForm">
+          <h2 style={{ fontSize: "60px", textAlign: "center" }}>CONTACT ME</h2>
+          <form ref={form} onSubmit={sendEmail}>
+            <div>
+              <label>Name: </label>
+              <input type="text" name="name" required />
+            </div>
+            <div>
+              <label>Email: </label>
+              <input type="email" name="email" required />
+            </div>
+            <div>
+              <label>Message:</label>
+              <textarea name="message" required />
+            </div>
+            <button
+              type="submit"
+              style={{
+                display: "block",
+                margin: "20px auto",
+                padding: "10px 20px",
+                fontSize: "16px",
+                fontFamily: "oswald",
+              }}
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </section>
 
       <footer
@@ -394,7 +398,7 @@ function App() {
             <i class="fa-brands fa-youtube"></i>
           </a>
           <a href="https://www.linkedin.com/in/roger-rovento-24827214b/">
-          <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
         <p>2025 © pRog.R Studio - Valley of Dreams</p>
