@@ -30,10 +30,10 @@ function App() {
 
     emailjs
       .sendForm(
-        "service_lvyi88x", // Replace with your EmailJS service ID
-        "template_ljko12r", // Replace with your EmailJS template ID
+        "service_ttykjgj", // Replace with your EmailJS service ID
+        "template_vvrw7oq", // Replace with your EmailJS template ID
         form.current,
-        "548wYUkSclgdexJeq" // Replace with your EmailJS user ID
+        "6g5ZjsDWvkdDpnB_7" // Replace with your EmailJS user ID
       )
       .then(
         () => {
@@ -393,7 +393,9 @@ function App() {
           <a href="https://www.youtube.com/@RogerRovento">
             <i class="fa-brands fa-youtube"></i>
           </a>
+          <a href="https://www.linkedin.com/in/roger-rovento-24827214b/">
           <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <p>2025 © pRog.R Studio - Valley of Dreams</p>
       </footer>

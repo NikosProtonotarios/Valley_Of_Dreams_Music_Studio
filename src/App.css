@@ -219,13 +219,15 @@
 }
 
 .musicVerseImage {
-  background-image: url("/images/Vod.png");
+  background-image: url("/images/VoD\ Records\ \(transparent\).png");
   height: 400px;
   width: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .emailContainer {
