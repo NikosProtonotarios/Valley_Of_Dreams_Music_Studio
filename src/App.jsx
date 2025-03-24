@@ -100,7 +100,6 @@ function App() {
           style={{
             fontFamily: "oswald",
             padding: "30px",
-            margin: "70px",
           }}
         >
           Studio Gear List

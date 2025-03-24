@@ -77,13 +77,13 @@
   font-size: 30px;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeIn 0.5s ease-in forwards;
+  animation: fadeIn 0.7s ease-in forwards;
 }
 
 .welcomeContainer p:nth-child(2) {
   opacity: 0;
-  animation: fadeIn 0.5s ease-in forwards;
-  animation-delay: 0.4s;
+  animation: fadeIn 0.7s ease-in forwards;
+  animation-delay: 0.6s;
 }
 
 @keyframes fadeIn {
@@ -132,6 +132,10 @@
   gap: 50px;
 }
 
+.gear-section h2 {
+  margin: 70px;
+}
+
 .gear-category {
   display: flex;
   flex-direction: row;
@@ -168,7 +172,8 @@
 .spotifySongs {
   display: flex;
   justify-content: space-evenly;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .bioContainer {
@@ -408,9 +413,9 @@
     margin: 20px;
   }
 
-  /* .bioText h1 {
-    margin: 15px;
-  } */
+  .gear-section h2 {
+    margin: 35px;
+  }
 }
 
 @media (max-width: 693px) {
@@ -422,6 +427,31 @@
 @media (max-width: 666px) {
   .navLinks {
     display: none;
+  }
+
+  .gear-section {
+    gap: 0px;
+  }
+
+  .gear-category {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gearText {
+    font-size: 25px;
+  }
+
+  .studioPhoto1 {
+    width: 500px;
+  }
+
+  .studioPhoto3 {
+    width: 500px;
+  }
+
+  .studioPhoto2 {
+    width: 500px;
   }
 }
 
@@ -438,9 +468,9 @@
     display: none;
   }
 
-  .menu-icon {
-    /* display: block;
-    font-size: 50px; */
+  .gear-section h2 {
+    font-size: 40px;
+    margin: 38px;
   }
 
   .navBar {
@@ -456,5 +486,24 @@
   .welcomeContainer p:first-of-type {
     font-size: 20px;
   }
-  
+
+  .gear-section h2 {
+    font-size: 30px;
+    margin: 20px;
+  }
+
+  .gearText {
+    font-size: 18px;
+  }
+
+  .spotifyContainer {
+    display: block;
+  }
+}
+
+@media (max-width: 310px) {
+  .gear-section h2 {
+    margin: 10px;
+    font-size: 25px;
+  }
 }
