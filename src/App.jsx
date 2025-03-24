@@ -108,7 +108,7 @@ function App() {
           <div className="studioPhoto1"></div>
           <div className="gearText">
             <h3>Audio Interfaces & Monitors</h3>
-            <ul>
+            <ul className="noPoints">
               <li>RME Fireface UFX+ Interface</li>
               <li>Adam Audio A77x Monitors</li>
               <li>GIK Acoustics Room Calculated Treatment</li>
@@ -120,7 +120,7 @@ function App() {
         <div class="gear-category">
           <div className="gearText">
             <h3>Preamps & Compressors</h3>
-            <ul>
+            <ul className="noPoints">
               <li>Warm Audio WA273 Preamp & EQ</li>
               <li>Warm Audio WA76 Compressor</li>
               <li>Warm Audio WA2A Compressor</li>
@@ -134,7 +134,7 @@ function App() {
           <div className="studioPhoto2"></div>
           <div className="gearText">
             <h3>Microphones & Headphones</h3>
-            <ul>
+            <ul className="noPoints">
               <li>Shure Sm7b Microphone</li>
               <li>Slate ML-1 Microphone</li>
               <li>Slate ML-2 Microphone</li>

@@ -384,21 +384,10 @@
     gap: 35px;
   }
 
-  .studioPhoto1 {
-    clip-path: inset(0 0 0 10px);
-  }
-
-  .studioPhoto3 {
-    clip-path: inset(0 10px 0 0);
-  }
-
-  .studioPhoto2 {
-    clip-path: inset(0 0 0 10px);
-  }
-
   .gearText {
     font-size: 17px;
     width: 600px;
+    text-align: center;
   }
 
   .gear-category {
@@ -431,6 +420,10 @@
 
   .gear-section {
     gap: 0px;
+  }
+
+  .noPoints {
+    list-style-type: none;
   }
 
   .gear-category {
