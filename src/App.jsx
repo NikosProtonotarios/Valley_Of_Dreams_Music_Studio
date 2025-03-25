@@ -225,7 +225,7 @@ function App() {
               creating.
             </p>
             <br />
-            <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+            <p style={{ fontFamily: "oswald" }}>
               Having mastered a wide range of skills, Roger brings a{" "}
               <strong>unique and diverse approach</strong> to his craft,
               constantly exploring new sounds and techniques. With more than{" "}
@@ -234,7 +234,7 @@ function App() {
               with his patient and engaging approach.
             </p>
             <br />
-            <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+            <p style={{ fontFamily: "oswald" }}>
               His <strong>collaborative spirit</strong> has also led him to work
               with musicians from various backgrounds, contributing his talents
               to numerous creative projects. As a composer and producer, Roger’s
@@ -242,7 +242,7 @@ function App() {
               music stand out, earning him respect in the industry.
             </p>
             <br />
-            <p style={{ fontFamily: "oswald", fontSize: "20px" }}>
+            <p style={{ fontFamily: "oswald" }}>
               Whether in the classroom, the studio, or on stage, Roger Rovento
               continues to <strong>push the boundaries</strong> of what’s
               possible in music, inspiring both his students and peers alike.
@@ -253,11 +253,10 @@ function App() {
       </section>
 
       <section id="youtube-container">
-        <div style={{ margin: "80px" }}>
+        <div>
           <h1
             style={{
               fontFamily: "oswald",
-              fontSize: "70px",
               textAlign: "center",
             }}
           >
@@ -266,14 +265,16 @@ function App() {
           <p
             style={{
               fontFamily: "oswald",
-              fontSize: "30px",
               textAlign: "center",
             }}
           >
             PRODUCED | ENGINEERED | MIXED | MASTERED
           </p>
         </div>
-        <div style={{ padding: "30px", backgroundColor: "#333333" }}>
+        <div
+          className="youtubeVideos"
+          style={{ padding: "30px", backgroundColor: "#333333" }}
+        >
           <iframe
             width="25%"
             height="315"

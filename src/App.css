@@ -47,6 +47,19 @@
   align-items: center;
 }
 
+#youtube-container h1 {
+  margin: 80px;
+  font-size: 70px;
+}
+
+#youtube-container p {
+  font-size: 30px;
+}
+
+#youtube-container div:first-child {
+  margin: 80px;
+}
+
 .navImage {
   background-image: url("/images/Roger%20Rovento%20LETTERS%20(transparent).png");
   height: 100px;
@@ -446,11 +459,56 @@
   .studioPhoto2 {
     width: 500px;
   }
+
+  .bioPhoto {
+    width: 600px;
+  }
 }
 
 @media (max-width: 576px) {
-  .bodyContainer {
-    max-width: 576px;
+  .bioContainer {
+    flex-direction: column;
+  }
+
+  .rogerText {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .youtubeVideos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .youtubeVideos iframe {
+    width: 100%;
+  }
+
+  #youtube-container {
+    flex-direction: column;
+  }
+
+  #youtube-container div {
+    margin: 0px;
+  }
+
+  #youtube-container h1 {
+    margin: 0px;
+    font-size: 33px;
+  }
+
+  #youtube-container div:first-child {
+    margin: 30px;
+  }
+
+  #youtube-container p {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .bioPhoto {
+    height: 580px;
+    background-position: 50% 17%;
   }
 
   .welcomeContainer p:nth-of-type(2) {
