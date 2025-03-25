@@ -70,6 +70,11 @@
   background-position: center;
 }
 
+.musicVerseSpotify {
+  display: flex;
+  gap: 50px;
+}
+
 .welcomeContainer {
   display: flex;
   flex-direction: column;
@@ -184,9 +189,14 @@
 
 .spotifySongs {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.spotifySongs iframe {
+  width: 32%;
 }
 
 .bioContainer {
@@ -506,6 +516,15 @@
     margin-top: 15px;
   }
 
+  .spotifySongs {
+    flex-direction: column;
+  }
+
+  .spotifySongs iframe {
+    width: 90%;
+    margin: 20px;
+  }
+
   .bioPhoto {
     height: 580px;
     background-position: 50% 17%;
@@ -526,6 +545,10 @@
 
   .navBar {
     justify-content: space-evenly;
+  }
+
+  .musicVerseSpotify {
+    flex-direction: column;
   }
 }
 
