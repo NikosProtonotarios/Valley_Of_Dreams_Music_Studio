@@ -72,10 +72,6 @@ function App() {
             <p className="featuredPointer">Featured Works</p>
           </Link>
 
-          <Link to="musicVerse-container" smooth={true} duration={600}>
-            <p className="valleyPointer">Valley of Dreams</p>
-          </Link>
-
           <Link to="bio-container" smooth={true} duration={600}>
             <p className="aboutPointer">About</p>
           </Link>

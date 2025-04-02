@@ -61,7 +61,7 @@
 }
 
 .navImage {
-  background-image: url("/images/Roger%20Rovento%20LETTERS%20(transparent).png");
+  background-image: url("/images/Roger%20Rovento%20LETTERS%20(transparent)optimized.png");
   height: 100px;
   width: 200px;
   background-color: white;
@@ -82,7 +82,7 @@
   justify-content: center;
   gap: 100px;
   font-size: 50px;
-  background-image: url("/images/Velvet\ Texture\ 1.png");
+  background-image: url("/images/Velvet\ Texture\ 1optimized.png");
   background-size: cover;
   background-repeat: none;
   background-position: center;
@@ -112,7 +112,7 @@
 }
 
 .studioPhoto1 {
-  background-image: url("/images/Studio\ 1.jpg");
+  background-image: url("/images/Studio\ 1optimized.jpg");
   height: 400px;
   width: 600px;
   background-repeat: none;
@@ -121,7 +121,7 @@
 }
 
 .studioPhoto2 {
-  background-image: url("/images/Studio\ 4.jpg");
+  background-image: url("/images/Studio\ 4optimized.jpg");
   height: 400px;
   width: 600px;
   background-repeat: none;
@@ -130,7 +130,7 @@
 }
 
 .studioPhoto3 {
-  background-image: url("/images/Studio\ 3.jpg");
+  background-image: url("/images/Studio\ 3optimized.jpg");
   height: 400px;
   width: 600px;
   background-repeat: none;
@@ -166,20 +166,8 @@
   font-size: 50px;
 }
 
-.gear-section h3 {
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
-}
-
-.gear-section li {
-  opacity: 0;
-  transform: translateX(40px);
-  animation: fadeIn 0.7s ease-in forwards;
-  animation-delay: 0.3s;
-}
-
 .spotifyContainer {
-  background-image: url("/images/D2BFE6MBNJO6HMTMZX5FDTTJOM.avif");
+  background-image: url("/images/D2BFE6MBNJO6HMTMZX5FDTTJOMoptimized.avif");
   background-attachment: fixed;
   background-color: black;
   background-size: cover;
@@ -214,21 +202,15 @@
 }
 
 .bioText h1:first-child {
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
   font-size: 40px;
 }
 
 .rogerText {
   font-size: 20px;
-  opacity: 0;
-  transform: translateX(40px);
-  animation: fadeIn 0.7s ease-in forwards;
-  animation-delay: 0.3s;
 }
 
 .bioPhoto {
-  background-image: url("/images/RR\ 1.jpg");
+  background-image: url("/images/RR\ 1optimized.jpg");
   height: 1100px;
   width: 800px;
   background-repeat: no-repeat;
@@ -240,7 +222,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url("/images/Valley\ 5.png");
+  background-image: url("/images/Valley\ 5optimized.png");
   height: 800px;
   width: 100%;
   background-size: cover;
@@ -250,7 +232,7 @@
 }
 
 .musicVerseImage {
-  background-image: url("/images/VoD\ Records\ \(transparent\).png");
+  background-image: url("/images/VoD\ Records\ \(transparent\)optimized.png");
   height: 400px;
   width: 400px;
   background-size: cover;
@@ -264,7 +246,7 @@
 .emailContainer {
   font-family: oswald;
   font-size: 23px;
-  background-image: url("/images/Velvet\ Texture\ 1.png");
+  background-image: url("/images/Velvet\ Texture\ 1optimized.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -392,8 +374,13 @@
     gap: 100px;
   }
 
+  .welcomeContainer {
+    width: 1360px;
+  }
+
   .navLinks {
     font-size: 23px;
+    padding-right: 40px;
   }
 
   .navImage {
@@ -403,8 +390,8 @@
 
 @media (max-width: 998px) {
   .navLinks {
-    font-size: 13px;
-    gap: 35px;
+    font-size: 24px;
+    gap: 60px;
   }
 
   .gearText {
@@ -441,6 +428,10 @@
     display: none;
   }
 
+  .welcomeContainer {
+    width: 633px;
+  }
+
   .gear-section {
     gap: 0px;
   }
@@ -453,18 +444,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
   }
 
   .gearText {
     font-size: 25px;
     text-align: center;
+    gap: 30px;
+    height: 350px;
   }
 
   .studioPhoto1, .studioPhoto2, .studioPhoto3 {
     width: 100%;
     max-width: 500px;
-    margin-bottom: 10px;
   }
 
   .gear-category:nth-child(2) {
@@ -508,6 +499,9 @@
 
   .spotifySongs {
     flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+    gap: 0;
   }
 
   .spotifySongs iframe {
@@ -573,6 +567,12 @@
 
   .musicVerseSpotify {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 488px) {
+  footerContainer div p {
+    font-size: 10px;
   }
 }
 
