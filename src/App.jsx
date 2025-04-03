@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { useInView } from "react-intersection-observer";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { initScrollAnimations } from "./scrollAnimations";
 import "./App.css";
 
 function App() {
@@ -18,22 +18,35 @@ function App() {
     setMenuOpen(!menuOpen);
   };
 
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
-
   const form = useRef();
+
+  // Initialize scroll animations when component mounts
+  useEffect(() => {
+    // Call the initialization function
+    initScrollAnimations();
+    
+    // Re-initialize animations when window is resized
+    const handleResize = () => {
+      initScrollAnimations();
+    };
+    
+    window.addEventListener('resize', handleResize);
+    
+    // Clean up event listener
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_ttykjgj",
-        "template_vvrw7oq",
+        "service_ttykjgj", // Replace with your EmailJS service ID
+        "template_vvrw7oq", // Replace with your EmailJS template ID
         form.current,
-        "6g5ZjsDWvkdDpnB_7"
+        "6g5ZjsDWvkdDpnB_7" // Replace with your EmailJS user ID
       )
       .then(
         () => {
@@ -83,24 +96,19 @@ function App() {
       </nav>
 
       <section id="welcome-container" className="welcomeContainer">
-        <p style={{ fontFamily: "oswald", color: "white" }}>
+        <p className="animate-on-scroll fade-in-up" style={{ fontFamily: "oswald", color: "white" }}>
           Welcome to pRog.R Studio
         </p>
-        <p style={{ fontFamily: "oswald", color: "white" }}>
+        <p className="animate-on-scroll fade-in-up delay-1" style={{ fontFamily: "oswald", color: "white" }}>
           WHERE YOUR SOUND COMES ALIVE
         </p>
       </section>
 
-      <section id="gearSection" class="gear-section">
-        <h2
-          style={{
-            fontFamily: "oswald",
-            padding: "30px",
-          }}
-        >
+      <section id="gearSection" className="gear-section">
+        <h2 className="animate-on-scroll fade-in-up" style={{ fontFamily: "oswald", padding: "30px" }}>
           Studio Gear List
         </h2>
-        <div class="gear-category">
+        <div className="gear-category animate-on-scroll fade-in-left">
           <div className="studioPhoto1"></div>
           <div className="gearText">
             <h3>Audio Interfaces & Monitors</h3>
@@ -113,7 +121,7 @@ function App() {
           </div>
         </div>
 
-        <div class="gear-category">
+        <div className="gear-category animate-on-scroll fade-in-right">
           <div className="gearText">
             <h3>Preamps & Compressors</h3>
             <ul className="noPoints">
@@ -126,7 +134,7 @@ function App() {
           <div className="studioPhoto3"></div>
         </div>
 
-        <div class="gear-category">
+        <div className="gear-category animate-on-scroll fade-in-left">
           <div className="studioPhoto2"></div>
           <div className="gearText">
             <h3>Microphones & Headphones</h3>
@@ -143,7 +151,7 @@ function App() {
       </section>
 
       <section id="spotify-container" className="spotifyContainer">
-        <div className="spotifySongs">
+        <div className="spotifySongs animate-on-scroll fade-in-up">
           <iframe
             style={{ borderRadius: "12px" }}
             src="https://open.spotify.com/embed/track/69nr4Kz592CgB7ridRjtDu?utm_source=generator"
@@ -202,13 +210,8 @@ function App() {
       </section>
 
       <section id="bio-container" className="bioContainer">
-        <div className="bioText">
-          <h1
-            style={{
-              fontFamily: "oswald",
-              textAlign: "center",
-            }}
-          >
+        <div className="bioText animate-on-scroll fade-in-left">
+          <h1 className="animate-on-scroll fade-in-up" style={{ fontFamily: "oswald", textAlign: "center" }}>
             ABOUT ROGER
           </h1>
           <div className="rogerText">
@@ -245,7 +248,7 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="bioPhoto"></div>
+        <div className="bioPhoto animate-on-scroll fade-in-right"></div>
       </section>
 
       <section id="youtube-container">
