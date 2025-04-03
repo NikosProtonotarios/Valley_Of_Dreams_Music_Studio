@@ -565,6 +565,7 @@ html, body {
 @media (max-width: 576px) {
   .bioContainer {
     flex-direction: column;
+    align-items: center;
   }
 
   #youtube-container {
@@ -598,6 +599,8 @@ html, body {
   .bioText {
     width: 100%;
     padding: 30px;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .welcomeContainer p:nth-of-type(2) {
