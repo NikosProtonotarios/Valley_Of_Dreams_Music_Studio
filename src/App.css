@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
 .menu-icon {
   display: none;
 }
@@ -371,16 +377,28 @@
 
 @media (max-width: 1430px) {
   .navBar {
-    gap: 100px;
+    gap: 50px;
   }
 
   .welcomeContainer {
-    width: 1360px;
+    width: 100%;
+    max-width: 1424px;
+  }
+
+  .musicVerseContainer,
+  .gear-section,
+  .spotifyContainer,
+  .bioContainer,
+  #youtube-container,
+  .emailContainer {
+    width: 100%;
+    max-width: 1424px;
   }
 
   .navLinks {
-    font-size: 23px;
-    padding-right: 40px;
+    font-size: 20px;
+    padding-right: 20px;
+    gap: 40px;
   }
 
   .navImage {
@@ -390,18 +408,19 @@
 
 @media (max-width: 998px) {
   .navLinks {
-    font-size: 24px;
-    gap: 60px;
+    font-size: 15px;
+    gap: 25px;
   }
 
   .gearText {
     font-size: 17px;
-    width: 600px;
-    text-align: center;
+    width: 100%;
+    max-width: 600px;
   }
 
   .gear-category {
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
   }
 
   .gear-section {
@@ -414,6 +433,11 @@
 
   .gear-section h2 {
     margin: 35px;
+  }
+
+  .studioPhoto1, .studioPhoto2, .studioPhoto3 {
+    width: 100%;
+    max-width: 600px;
   }
 }
 
@@ -429,11 +453,14 @@
   }
 
   .welcomeContainer {
-    width: 633px;
+    width: 100%;
+    max-width: 666px;
   }
 
   .gear-section {
     gap: 0px;
+    width: 100%;
+    max-width: 666px;
   }
 
   .noPoints {
@@ -444,6 +471,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 666px;
   }
 
   .gearText {
@@ -451,6 +480,8 @@
     text-align: center;
     gap: 30px;
     height: 350px;
+    width: 100%;
+    max-width: 500px;
   }
 
   .studioPhoto1, .studioPhoto2, .studioPhoto3 {
@@ -485,7 +516,8 @@
   }
 
   .bioPhoto {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
   }
 
   .youtubeVideos {
@@ -507,6 +539,26 @@
   .spotifySongs iframe {
     width: 90%;
     margin: 20px;
+  }
+
+  .spotifyContainer {
+    width: 100%;
+    max-width: 666px;
+  }
+
+  .bioContainer {
+    width: 100%;
+    max-width: 666px;
+  }
+
+  #youtube-container {
+    width: 100%;
+    max-width: 666px;
+  }
+
+  .emailContainer {
+    width: 100%;
+    max-width: 666px;
   }
 }
 
@@ -571,8 +623,26 @@
 }
 
 @media (max-width: 488px) {
-  footerContainer div p {
+  .footerContainer p:first-child {
     font-size: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footerContainer p:last-child {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .footerLinks a {
+    text-align: center;
   }
 }
 
