@@ -30,10 +30,10 @@ function App() {
 
     emailjs
       .sendForm(
-        "service_ttykjgj", // Replace with your EmailJS service ID
-        "template_vvrw7oq", // Replace with your EmailJS template ID
+        "service_ttykjgj",
+        "template_vvrw7oq",
         form.current,
-        "6g5ZjsDWvkdDpnB_7" // Replace with your EmailJS user ID
+        "6g5ZjsDWvkdDpnB_7"
       )
       .then(
         () => {
@@ -217,7 +217,7 @@ function App() {
               musician with over a decade of experience as a{" "}
               <strong>music teacher</strong>, <strong>composer</strong>, and{" "}
               <strong>producer</strong>. His deep passion for music shines
-              through in every note, whether he’s playing, teaching, or
+              through in every note, whether he's playing, teaching, or
               creating.
             </p>
             <br />
@@ -233,14 +233,14 @@ function App() {
             <p style={{ fontFamily: "oswald" }}>
               His <strong>collaborative spirit</strong> has also led him to work
               with musicians from various backgrounds, contributing his talents
-              to numerous creative projects. As a composer and producer, Roger’s
+              to numerous creative projects. As a composer and producer, Roger's
               ability to <strong>blend genres and styles</strong> makes his
               music stand out, earning him respect in the industry.
             </p>
             <br />
             <p style={{ fontFamily: "oswald" }}>
               Whether in the classroom, the studio, or on stage, Roger Rovento
-              continues to <strong>push the boundaries</strong> of what’s
+              continues to <strong>push the boundaries</strong> of what's
               possible in music, inspiring both his students and peers alike.
             </p>
           </div>
