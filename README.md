@@ -1,8 +1,23 @@
-# React + Vite
+# Roger Rovento - Music Studio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the official repository for Roger Rovento's music studio website. This site is designed to showcase Roger Rovento's expertise as a **music teacher, music producer, and sound engineer** while promoting his studio and services.
 
-Currently, two official plugins are available:
+## Features
+- **About Roger Rovento**: Learn about his background and experience.
+- **Studio Gear**: Detailed information about the equipment available in the studio.
+- **Music & Projects**: Listen to original compositions and explore projects Roger Rovento has participated in.
+- **Contact Section**: Send messages directly to Roger Rovento for inquiries, lessons, or collaborations.
+- **Social Media Links**: Connect with Roger Rovento on YouTube, LinkedIn, Facebook, and Instagram (available in the footer).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js (if applicable)
+- **Hosting**: Deployed on [Platform Name]
+
+## Installation
+To run the project locally:
+
+```bash
+git clone https://github.com/yourusername/roger-rovento.git
+cd roger-rovento
+open index.html
