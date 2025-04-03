@@ -10,14 +10,4 @@ Welcome to the official repository for Roger Rovento's music studio website. Thi
 - **Social Media Links**: Connect with Roger Rovento on YouTube, LinkedIn, Facebook, and Instagram (available in the footer).
 
 ## Tech Stack
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Node.js (if applicable)
-- **Hosting**: Deployed on [Platform Name]
-
-## Installation
-To run the project locally:
-
-```bash
-git clone https://github.com/yourusername/roger-rovento.git
-cd roger-rovento
-open index.html
+- **Frontend**: React, CSS, JavaScript
